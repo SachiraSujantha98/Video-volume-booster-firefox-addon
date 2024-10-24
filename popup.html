@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+    }
+    .slider-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    #volumeValue {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <label for="volumeSlider">Volume Boost</label>
+    <input type="range" id="volumeSlider" min="100" max="500" value="100" step="10">
+    <div>Boost: <span id="volumeValue">100</span>%</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
